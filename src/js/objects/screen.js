@@ -15,11 +15,11 @@ export const screen = {
                 </div>
                 <div class="predicted-temperature">
                     <div class="min-temperature">
-                        <img src="../../src/icons/min-temperature.png" alt="atmospheric pressure">
+                        <img src="./src/icons/min-temperature.png" alt="atmospheric pressure">
                         <span>${Math.ceil(weather.temp_min)}ºC</span>
                     </div>
                     <div class="max-temperature">
-                        <img src="../../src/icons/max-temperature.png" alt="atmospheric pressure">
+                        <img src="./src/icons/max-temperature.png" alt="atmospheric pressure">
                         <span>${Math.ceil(weather.temp_max)}ºC</span>
                     </div>
                     <p class="feels-like"> Sensação <span>${Math.ceil(weather.feels_like)}ºC</span> </p>
@@ -29,15 +29,15 @@ export const screen = {
         <hr>
         <ul class="metrics">
             <li class="info">
-                <img src="../../src/icons/pressure.png" alt="atmospheric pressure">
+                <img src="./src/icons/pressure.png" alt="atmospheric pressure">
                 <span class="units">${weather.pressure}hPa</span>
             </li>
             <li class="info"> 
-                <img src="../../src/icons/wind.png" alt="wind icon"/>
+                <img src="./src/icons/wind.png" alt="wind icon"/>
                 <span class="units">${Math.ceil(weather.wind_speed)} km/h</span>
             </li>
             <li class="info"> 
-                <img src="../../src/icons/humidity.png" alt="humidity icon"/>
+                <img src="./src/icons/humidity.png" alt="humidity icon"/>
                 <span class="units">${weather.humidity}%</span>
             </li>
         </ul>
