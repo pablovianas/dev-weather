@@ -5,12 +5,10 @@ import { screen } from './objects/screen.js'
 
 const form = document.getElementById('form');
 const cityName = document.getElementById('city');
-const card = document.querySelector('.card');
 
 form.addEventListener('submit', async (e) => {
     e.preventDefault();
 
-    card.classList.add('visible')
     const geoData = await getGeolocation(cityName.value);
 
     if (geoData.length === 0) {
@@ -36,7 +34,6 @@ const renderWeatherInformations = async () => {
 
     const currentWeather = await getWeather(latitude, longitude);
 
-    card.classList.add('visible')
     weather.setWeather(currentWeather);
     screen.renderCityWeather(weather, coordinates);
 }
