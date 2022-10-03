@@ -1,6 +1,6 @@
 
 export async function getGeolocation(cityName) {
-    const url = `http://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=1&appid=47df926a280ac35168b5c97cf80a9a37`
+    const url = `https://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=1&appid=47df926a280ac35168b5c97cf80a9a37`
     const response = await fetch(url);
     return await response.json();
 }
